@@ -77,3 +77,30 @@ if(login == "admin" && senha == "1234"){
 }else{
     console.log("Falha de autenticação")
 }
+console.log("Fim do exercicio 5")
+
+
+/**Exercicio 6
+ * Vamos criar um programa que calcule a média de 7 notas e exiba uma mensagem indicando se o aluno
+ * foi aprovado ou reprovado. Considere que a média mínima para aprovação é 6.Exemplifique e demonstre
+ * a saída!
+ */
+
+//Declarando as notas do aluno
+let nota1 = 6
+let nota2 = 6
+let nota3 = 6
+let nota4 = 6
+let nota5 = 6
+let nota6 = 6
+let nota7 = 6
+
+//Calculando e armazenando a média do aluno
+let media = (nota1 + nota2 + nota3 + nota4 + nota5 +nota6 + nota7) / 7
+
+//Condicional para mostrar se o aluno foi aprovado ou não
+if(media < 6){
+    console.log("Reprovado")
+}else{
+    console.log("Aprovado")
+}
