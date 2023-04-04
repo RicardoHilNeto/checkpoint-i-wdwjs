@@ -129,12 +129,40 @@ const btn = document.getElementById("btn");
  * demonstre a saída!
  */
 
+//Pegando o texto no html pelo id
 const txt = document.getElementById("texto")
 
+//Adicinando um evento quando o mouse estiver em cima do texto com o addEventListener
 txt.addEventListener("mouseover",function(){
 
+    //Trocando os dados do texto
     txt.innerHTML = "NOVO TEXTO!";
     txt.style.backgroundColor = "grey"
     txt.style.color = "white"
 })
 //Fim do exercicio 8
+
+
+/**
+ * Exercicio 9
+ * Crie eventos que  ao  passar  o  mouse  sobre  a  div  "box"e  ao  deixar  ela,  o  seu  conteúdo  seja trocado 
+ * entre  "Olá"  e  "Tchau"  e  a  cor  de  fundo seja  alterada  entre  verde  e  amarelo(Você  já  tem  as  dicas  das 
+ * questões anteriores que podem te auxiliar a resolver essa parte). Utilize o operador ternário para verificar 
+ * qual conteúdo deve ser exibido e qual cor de fundo deve ser aplicada. Exemplifique e demonstre a saída!
+ */
+
+//Pegando o texto no html pelo id
+const box = document.getElementById("box")
+
+//Adicinando um evento quando o mouse estiver em cima do texto com o addEventListener
+box.addEventListener("mouseover",function(){
+    box.innerHTML === 'Olá' ? 'Tchau' : 'Olá';
+    box.style.backgroundColor = "yellow"
+})
+
+//Adicinando um evento quando o mouse sair do texto com o addEventListener
+box.addEventListener("mouseout",function(){
+    box.innerHTML === 'Tchau' ? 'Tchau' : 'Olá';
+    box.style.backgroundColor = "green"
+})
+//Fim do exercicio 9
