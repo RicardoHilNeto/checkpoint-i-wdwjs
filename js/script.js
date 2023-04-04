@@ -104,3 +104,19 @@ if(media < 6){
 }else{
     console.log("Aprovado")
 }
+console.log("Fim do exercicio 6")
+
+
+/**Exercicio 7
+ * Crie um botão em HTML e utilize o evento de clique em Javascript para alterar a cor de fundo da página
+ * para verde. Para isso, utilize o código document.body.style.backgroundColor = 'green';dentro da função
+ * do evento de clique.Exemplifique e demonstre a saída!
+ */
+
+//Pegando o botão pelo id
+const btn = document.getElementById("btn");
+    //adicionando evento com o addEventListener
+    btn.addEventListener('click', function() {
+    document.body.style.backgroundColor = 'green';
+});
+//Fim do exercicio 7
